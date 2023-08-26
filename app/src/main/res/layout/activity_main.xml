@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textviewTimeTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarSong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewTitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textviewTitle"
+        android:layout_width="412dp"
+        android:layout_height="51dp"
+        android:text="Tên bài hát"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <ImageButton
+        android:background="@null"
+        android:id="@+id/imageButtonPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewTitle"
+        app:layout_constraintVertical_bias="0.77"
+        app:srcCompat="@drawable/prev" />
+
+    <ImageButton
+        android:background="@null"
+        android:id="@+id/imageButtonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewTitle"
+        app:layout_constraintVertical_bias="0.77"
+        app:srcCompat="@drawable/play" />
+
+    <ImageButton
+        android:background="@null"
+        android:id="@+id/imageButtonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonPlay"
+        app:layout_constraintTop_toBottomOf="@+id/textviewTitle"
+        app:layout_constraintVertical_bias="0.77"
+        app:srcCompat="@drawable/stop" />
+
+    <ImageButton
+        android:background="@null"
+        android:id="@+id/imageButtonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonStop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822"
+        app:srcCompat="@drawable/next" />
+
+    <SeekBar
+        android:id="@+id/seekBarSong"
+        android:layout_width="346dp"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonPrev"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewTitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textviewTimeSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarSong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewTitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="267dp"
+        android:layout_height="221dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarSong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewTitle"
+        app:layout_constraintVertical_bias="0.513"
+        app:srcCompat="@drawable/compact_disc" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
